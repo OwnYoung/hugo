@@ -15,7 +15,7 @@ pagination.pagerSize = 5
   contentTypeName = "posts"
 
   # 如果设置为 0，则仅显示子菜单触发器
-  showMenuItems = 2
+  showMenuItems = 4
 
   # 显示语言切换选择器
   showLanguageSelector = false
@@ -24,7 +24,7 @@ pagination.pagerSize = 5
   fullWidthTheme = false
 
   # 使用默认宽度居中主题
-  centerTheme = false
+  centerTheme = true
 
   # 如果资源目录包含名为 `cover.(jpg|png|webp)` 的图像，
   # 则该文件将自动用作封面
@@ -71,7 +71,7 @@ pagination.pagerSize = 5
 [languages]
   [languages.en]
     languageName = "English"
-    title = "Terminal"
+    title = "Orion's Blog" # 站点标题
 
     [languages.en.params]
       subtitle = "A simple, retro theme for Hugo"
@@ -89,10 +89,14 @@ pagination.pagerSize = 5
       words = "字数"
 
       [languages.en.params.logo]
-        logoText = "Terminal"
+        logoText = "Welcome to Orion's Blog"
         logoHomeLink = "/"
 
       [languages.en.menu]
+        [[languages.en.menu.main]]
+          identifier = "home"
+          name = "主页"
+          url = "/"
         [[languages.en.menu.main]]
           identifier = "about"
           name = "关于"
@@ -102,6 +106,7 @@ pagination.pagerSize = 5
           name = "展示"
           url = "/showcase"
 
+# ！这是hugo mod专用，其他本地 & git子模块安装方法都要全注释掉！
 # [module]
 #   # 如果您想对主题进行更改并将其本地保留在存储库中，
 #   # 请取消注释下面的行（如有必要，请更正本地路径）。
