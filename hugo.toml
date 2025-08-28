@@ -1,0 +1,111 @@
+baseurl = "/"
+languageCode = "en-us"
+# 仅在将主题保留在 `themes` 目录中时添加此项
+# 如果使用主题作为远程 Hugo 模块，请删除此项
+theme = "terminal"
+pagination.pagerSize = 5
+
+# Chroma 和自定义语法高亮所需
+[markup.highlight]
+  noClasses = false
+
+[params]
+  # 主要内容目录名称（默认为 `content/posts`）
+  # 设置的内容列表将显示在您的索引页（baseurl）上
+  contentTypeName = "posts"
+
+  # 如果设置为 0，则仅显示子菜单触发器
+  showMenuItems = 2
+
+  # 显示语言切换选择器
+  showLanguageSelector = false
+
+  # 将主题设置为全屏宽度
+  fullWidthTheme = false
+
+  # 使用默认宽度居中主题
+  centerTheme = false
+
+  # 如果资源目录包含名为 `cover.(jpg|png|webp)` 的图像，
+  # 则该文件将自动用作封面
+  # 使用此选项，您无需在 front-matter 中设置 `cover` 参数
+  autoCover = true
+
+  # 设置显示文章的最后更新时间
+  # 如果使用 git，可以将 `enableGitInfo` 设置为 `true`，文章将自动获取最后更新时间
+  showLastUpdated = false
+
+  # 为最后更新日期提供前缀字符串。默认格式：2020-xx-xx [Updated: 2020-xx-xx] :: Author
+  # updatedDatePrefix = "Updated"
+
+  # 是否显示文章的预计阅读时间
+  # readingTime = false # 默认
+
+  # 是否显示目录
+  # 可以在页面的 front-matter 中覆盖
+  # Toc = false # 默认
+
+  # 设置目录标题
+  # 可以在页面的 front-matter 中覆盖
+  # TocTitle = "Table of Contents" # 默认
+
+  # 设置文章的日期/时间格式
+  # 这将影响在 index.html、文章列表页面和文章本身上显示的日期/时间
+  # 此值也可以在 front matter 中按文章配置
+  # 如果时区显示与预期不同，请确保服务器上的时区设置正确
+  # 可以根据 Hugo 文档自定义此值：
+  # https://gohugo.io/functions/time/format/
+  # 默认值（无需更改）：
+  # dateFormat = "2006-01-02"
+  # 示例格式，包含日期、时间和时区缩写：
+  # dateFormat = "2006-01-02 3:04:06 PM MST"
+
+
+[params.twitter]
+  # 为 Twitter 卡片设置 Twitter 句柄
+  # 参见 https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # 不要包含 @ 符号
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "English"
+    title = "Terminal"
+
+    [languages.en.params]
+      subtitle = "A simple, retro theme for Hugo"
+      owner = ""
+      keywords = ""
+      copyright = ""
+      menuMore = "显示更多"
+      readMore = "阅读更多"
+      readOtherPosts = "阅读其他文章"
+      newerPosts = "更新的文章"
+      olderPosts = "更早的文章"
+      missingContentMessage = "页面未找到..."
+      missingBackButtonLabel = "返回首页"
+      minuteReadingTime = "分钟阅读"
+      words = "字数"
+
+      [languages.en.params.logo]
+        logoText = "Terminal"
+        logoHomeLink = "/"
+
+      [languages.en.menu]
+        [[languages.en.menu.main]]
+          identifier = "about"
+          name = "关于"
+          url = "/about"
+        [[languages.en.menu.main]]
+          identifier = "showcase"
+          name = "展示"
+          url = "/showcase"
+
+# [module]
+#   # 如果您想对主题进行更改并将其本地保留在存储库中，
+#   # 请取消注释下面的行（如有必要，请更正本地路径）。
+#   # --
+#   # replacements = "github.com/panr/hugo-theme-terminal/v4 -> themes/terminal"
+# [[module.imports]]
+#   path = 'github.com/panr/hugo-theme-terminal/v4'
