@@ -14,6 +14,9 @@ pagination.pagerSize = 5
   # 设置的内容列表将显示在您的索引页（baseurl）上
   contentTypeName = "posts"
 
+  # 新增每日算法内容类型 2025/08/30
+  dailyContentTypeName = "daily"
+
   # 如果设置为 0，则仅显示子菜单触发器
   showMenuItems = 4
 
@@ -88,6 +91,11 @@ pagination.pagerSize = 5
       minuteReadingTime = "分钟阅读"
       words = "字数"
 
+      # 添加每日算法相关配置 2025/08/30
+      dailyReadOtherPosts = "阅读其他算法文章"
+      dailyNewerPosts = "更新的算法文章"
+      dailyOlderPosts = "更早的算法文章"
+
       [languages.en.params.logo]
         logoText = "Welcome to Orion's Blog"
         logoHomeLink = "/"
@@ -97,6 +105,10 @@ pagination.pagerSize = 5
           identifier = "home"
           name = "主页"
           url = "/"
+        [[languages.en.menu.main]]
+          identifier = "daily"
+          name = "每日算法"
+          url = "/daily/"
         [[languages.en.menu.main]]
           identifier = "about"
           name = "关于"
