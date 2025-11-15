@@ -1,3 +1,116 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseurl = "/"
+languageCode = "zh-cn"
+# 仅当主题放在 `themes` 目录下时添加此行。
+# 若使用远程 Hugo 模块形式的主题，移除此行。
+theme = "terminal"
+pagination.pagerSize = 5  # 分页大小，每页显示5条内容
+
+# 为Chroma代码高亮和自定义语法高亮所必需的配置
+[markup.highlight]
+  noClasses = false  # 启用自定义CSS类用于代码高亮
+
+[params]
+  # 主内容的目录名称（默认是 `content/posts`）。
+  # 设置的内容列表会显示在你的首页（baseurl）上。
+  contentTypeName = "posts"
+
+  # 若设为0，将只显示子菜单触发器
+  showMenuItems = 5  # 菜单栏显示的项数
+
+  # 是否显示语言切换选择器
+  showLanguageSelector = false
+
+  # 将主题设置为全屏宽度
+  fullWidthTheme = false
+
+  # 使主题居中并使用默认宽度
+  centerTheme = true  # 居中显示
+
+  # 若你的资源目录中有名为 `cover.(jpg|png|webp)` 的图片，
+  # 该文件将自动被用作封面图。
+  # 启用此选项后，无需在文章的front-matter中设置`cover`参数。
+  autoCover = true
+
+  # 设置是否显示文章的最后更新时间
+  # 若使用git，可将`enableGitInfo`设为`true`，文章将自动获取最后更新时间
+  showLastUpdated = false
+
+  # 为最后更新日期设置前缀字符串。默认显示格式如下：2020-xx-xx [更新于：2020-xx-xx] :: 作者
+  # updatedDatePrefix = "更新于"
+
+  # 是否显示页面的预计阅读时间
+  # readingTime = false  # 默认值
+
+  # 是否显示目录（TOC）
+  # 可在页面的front-matter中单独覆盖此设置
+  # Toc = false  # 默认值
+
+  # 设置目录的标题
+  # 可在页面的front-matter中单独覆盖此设置
+  # TocTitle = "目录"  # 默认值（已改为中文）
+
+  # 设置文章的日期/时间格式
+  # 这会影响在首页、文章列表页和文章本身显示的日期/时间
+  # 此值也可在单篇文章的front-matter中单独配置
+  # 若发现时区显示与预期不符，请确保服务器的时区设置正确
+  # 可根据Hugo文档自定义此值：
+  # https://gohugo.io/functions/time/format/
+  # 默认值（无需修改）：
+  # dateFormat = "2006-01-02"
+  # 示例格式，包含日期、时间和时区缩写：
+  # dateFormat = "2006-01-02 15:04:06 MST"
+
+
+[params.twitter]
+  # 为Twitter卡片设置Twitter账号
+  # 参考https://developer.twitter.com/en/docs/tweets/optimize-with-cards/guides/getting-started#card-and-content-attribution
+  # 不要包含@符号
+  creator = ""
+  site = ""
+
+[languages]
+  [languages.en]
+    languageName = "中文"
+    title = "ORiON's Blog"  # 站点标题（可自定义）
+
+    [languages.en.params]
+      subtitle = "一个简洁的复古风Hugo主题"
+      owner = ""  # 所有者
+      keywords = ""  # 关键词
+      copyright = ""  # 版权信息
+      menuMore = "显示更多"
+      readMore = "阅读更多"
+      readOtherPosts = "阅读其他文章"
+      newerPosts = "较新文章"
+      olderPosts = "较早文章"
+      missingContentMessage = "页面未找到..."
+      missingBackButtonLabel = "返回首页"
+      minuteReadingTime = "分钟阅读"
+      words = "字"  # 字数单位
+
+      [languages.en.params.logo]
+        logoText = "终端"  # Logo文字
+        logoHomeLink = "/"  # Logo指向首页
+
+      [languages.en.menu]
+        [[languages.en.menu.main]]
+          identifier = "about"
+          name = "关于"
+          url = "/about"
+        [[languages.en.menu.main]]
+          identifier = "showcase"
+          name = "展示"
+          url = "/showcase"
+
+        [[languages.en.menu.main]]
+          identifier = "posts"
+          name = "文章"
+          url = "/posts"
+
+[module]
+  # 若你想修改主题并将其保存在本地仓库中，
+  # 取消下面一行的注释（必要时修正本地路径）。
+  # --
+  # replacements = "github.com/panr/hugo-theme-terminal/v4 -> themes/terminal"
+# [[module.imports]]
+#   path = 'github.com/panr/hugo-theme-terminal/v4'

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数据结构 on ORiON&#39;s Blog</title>
+    <link>//localhost:1313/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/</link>
+    <description>Recent content in 数据结构 on ORiON&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 11 Oct 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>每日算法 #4 寻找两个正序数组的中位数</title>
+      <link>//localhost:1313/posts/4-%E5%AF%BB%E6%89%BE%E4%B8%A4%E4%B8%AA%E6%AD%A3%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0/</link>
+      <pubDate>Sat, 11 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/4-%E5%AF%BB%E6%89%BE%E4%B8%A4%E4%B8%AA%E6%AD%A3%E5%BA%8F%E6%95%B0%E7%BB%84%E7%9A%84%E4%B8%AD%E4%BD%8D%E6%95%B0/</guid>
+      <description>&lt;h2 id=&#34;寻找两个正序数组的中位数&#34;&gt;寻找两个正序数组的中位数&lt;/h2&gt;&#xA;&lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;&#xA;&lt;p&gt;给定两个大小分别为 &lt;code&gt;m&lt;/code&gt; 和 &lt;code&gt;n&lt;/code&gt; 的正序（从小到大）数组 &lt;code&gt;nums1&lt;/code&gt; 和 &lt;code&gt;nums2&lt;/code&gt;。请你找出并返回这两个正序数组的 &lt;strong&gt;中位数&lt;/strong&gt; 。&lt;/p&gt;&#xA;&lt;p&gt;算法的时间复杂度应该为 &lt;code&gt;O(log (m+n))&lt;/code&gt; 。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入：nums1 = [1,3], nums2 = [2]&#xA;输出：2.00000&#xA;解释：合并数组 = [1,2,3] ，中位数 2&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入：nums1 = [1,2], nums2 = [3,4]&#xA;输出：2.50000&#xA;解释：合并数组 = [1,2,3,4] ，中位数 (2 + 3) / 2 = 2.5&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;nums1.length == m&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;nums2.length == n&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;0 &amp;lt;= m &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;0 &amp;lt;= n &amp;lt;= 1000&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;1 &amp;lt;= m + n &amp;lt;= 2000&lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;-106 &amp;lt;= nums1[i], nums2[i] &amp;lt;= 106&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;核心思想&#34;&gt;核心思想&lt;/h3&gt;&#xA;&lt;p&gt;朴素思想：合并两个数组，排序，判断奇偶个数取中间&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>每日算法 #3100 换水问题 贰</title>
+      <link>//localhost:1313/posts/3100-%E6%8D%A2%E6%B0%B4%E9%97%AE%E9%A2%98-ii/</link>
+      <pubDate>Thu, 02 Oct 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/3100-%E6%8D%A2%E6%B0%B4%E9%97%AE%E9%A2%98-ii/</guid>
+      <description>&lt;h2 id=&#34;3100-换水问题-ii&#34;&gt;[3100] 换水问题 II&lt;/h2&gt;&#xA;&lt;h3 id=&#34;描述&#34;&gt;描述&lt;/h3&gt;&#xA;&lt;p&gt;给你两个整数 &lt;code&gt;numBottles&lt;/code&gt; 和 &lt;code&gt;numExchange&lt;/code&gt; 。&lt;/p&gt;&#xA;&lt;p&gt;&lt;code&gt;numBottles&lt;/code&gt; 代表你最初拥有的满水瓶数量。在一次操作中，你可以执行以下操作之一：&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;喝掉任意数量的满水瓶，使它们变成空水瓶。&lt;/li&gt;&#xA;&lt;li&gt;用 &lt;code&gt;numExchange&lt;/code&gt; 个空水瓶交换一个满水瓶。然后，将 &lt;code&gt;numExchange&lt;/code&gt; 的值增加 1 。&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;注意，你不能使用相同的 &lt;code&gt;numExchange&lt;/code&gt; 值交换多批空水瓶。例如，如果 &lt;code&gt;numBottles == 3&lt;/code&gt; 并且 &lt;code&gt;numExchange == 1&lt;/code&gt; ，则不能用 &lt;code&gt;3&lt;/code&gt; 个空水瓶交换成 &lt;code&gt;3&lt;/code&gt; 个满水瓶。&lt;/p&gt;&#xA;&lt;p&gt;返回你 &lt;strong&gt;最多&lt;/strong&gt; 可以喝到多少瓶水。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;示例 1：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://assets.leetcode.com/uploads/2024/01/28/exampleone1.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入：numBottles = 13, numExchange = 6&#xA;输出：15&#xA;解释：上表显示了满水瓶的数量、空水瓶的数量、numExchange 的值，以及累计喝掉的水瓶数量。&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;示例 2：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://assets.leetcode.com/uploads/2024/01/28/example231.png&#34; alt=&#34;img&#34;&gt;&lt;/p&gt;&#xA;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;输入：numBottles = 10, numExchange = 3&#xA;输出：13&#xA;解释：上表显示了满水瓶的数量、空水瓶的数量、numExchange 的值，以及累计喝掉的水瓶数量。&#xA;&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;提示：&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;code&gt;1 &amp;lt;= numBottles &amp;lt;= 100 &lt;/code&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;code&gt;1 &amp;lt;= numExchange &amp;lt;= 100&lt;/code&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h3 id=&#34;核心思想&#34;&gt;核心思想&lt;/h3&gt;&#xA;&lt;p&gt;要注意是没换一瓶，代价就要加一，不能直接 empty/numExchange来换多瓶&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  
+    <title>IDM冻结试用期方法 :: ORiON&#39;s Blog</title>
+  
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="简单命令行破解IDM方法" />
+<meta name="keywords" content="IDM, 破解" />
+
+  <meta name="robots" content="noodp" />
+
+<link rel="canonical" href="//localhost:1313/posts/idm%E5%86%BB%E7%BB%93%E8%AF%95%E7%94%A8%E6%9C%9F%E6%96%B9%E6%B3%95/" />
+
+
+
+
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/buttons.min.86f6b4c106b6c6eb690ae5203d36b442c1f66f718ff4e8164fa86cf6c61ad641.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/code.min.d529ea4b2fb8d34328d7d31afc5466d5f7bc2f0bc9abdd98b69385335d7baee4.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/fonts.min.5bb7ed13e1d00d8ff39ea84af26737007eb5051b157b86fc24487c94f3dc8bbe.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/footer.min.eb8dfc2c6a7eafa36cd3ba92d63e69e849e2200e0002a228d137f236b09ecd75.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/gist.min.a751e8b0abe1ba8bc53ced52a38b19d8950fe78ca29454ea8c2595cf26aad5c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/header.min.75c7eb0e2872d95ff48109c6647d0223a38db52e2561dd87966eb5fc7c6bdac6.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/main.min.36833afd348409fc6c3d09d0897c5833d9d5bf1ff31f5e60ea3ee42ce2b1268c.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/menu.min.3c17467ebeb3d38663dce68f71f519901124fa5cbb4519b2fb0667a21e9aca39.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/pagination.min.bbb986dbce00a5ce5aca0504b7925fc1c581992a4bf57f163e5d69cc1db7d836.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/post.min.e6dddd258e64c83e05cec0cd49c05216742d42fc8ecbfbe6b67083412b609bd3.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/syntax.min.a0773cce9310cb6d8ed23e50f005448facf29a53001b57e038828daa466b25c0.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terminal.min.e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css">
+
+  
+  <link rel="stylesheet" href="//localhost:1313/css/terms.min.b81791663c3790e738e571cdbf802312390d30e4b1d8dc9d814a5b5454d0ac11.css">
+
+
+
+
+
+
+
+<link rel="shortcut icon" href="//localhost:1313/favicon.png">
+<link rel="apple-touch-icon" href="//localhost:1313/apple-touch-icon.png">
+
+
+<meta name="twitter:card" content="summary" />
+
+  
+    <meta name="twitter:site" content="" />
+  
+    <meta name="twitter:creator" content="Orion Young" />
+
+
+
+<meta property="og:locale" content="en" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="IDM冻结试用期方法">
+<meta property="og:description" content="简单命令行破解IDM方法" />
+<meta property="og:url" content="//localhost:1313/posts/idm%E5%86%BB%E7%BB%93%E8%AF%95%E7%94%A8%E6%9C%9F%E6%96%B9%E6%B3%95/" />
+<meta property="og:site_name" content="ORiON&#39;s Blog" />
+
+  
+  
+  <meta property="og:image" content="https://img.orionyoung.com/20250829112620419.png">
+
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="627">
+
+
+  <meta property="article:published_time" content="2025-08-29 00:00:00 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+<div class="container center">
+
+  <header class="header">
+  <div class="header__inner">
+    <div class="header__logo">
+      <a href="/">
+  <div class="logo">
+    终端
+  </div>
+</a>
+
+    </div>
+    
+      <ul class="menu menu--mobile">
+  <li class="menu__trigger">Menu&nbsp;▾</li>
+  <li>
+    <ul class="menu__dropdown">
+      
+        
+          <li><a href="/about">关于</a></li>
+        
+      
+        
+          <li><a href="/showcase">展示</a></li>
+        
+      
+        
+          <li><a href="/posts">文章</a></li>
+        
+      
+      
+    </ul>
+  </li>
+</ul>
+
+    
+    
+  </div>
+  
+    <nav class="navigation-menu">
+  <ul class="navigation-menu__inner menu--desktop">
+    
+      
+        
+          <li><a href="/about" >关于</a></li>
+        
+      
+        
+          <li><a href="/showcase" >展示</a></li>
+        
+      
+        
+          <li><a href="/posts" >文章</a></li>
+        
+      
+      
+    
+  </ul>
+</nav>
+
+  
+</header>
+
+
+  <div class="content">
+    
+<article class="post">
+  <h1 class="post-title">
+    <a href="//localhost:1313/posts/idm%E5%86%BB%E7%BB%93%E8%AF%95%E7%94%A8%E6%9C%9F%E6%96%B9%E6%B3%95/">IDM冻结试用期方法</a>
+  </h1>
+  <div class="post-meta"><time class="post-date">2025-08-29</time><span class="post-author">Orion Young</span></div>
+
+  
+    <span class="post-tags">
+      
+      #<a href="//localhost:1313/tags/%E6%95%99%E7%A8%8B/">教程</a>&nbsp;
+      
+      #<a href="//localhost:1313/tags/%E8%BD%AF%E4%BB%B6/">软件</a>&nbsp;
+      
+    </span>
+  
+  
+  <img src="https://img.orionyoung.com/20250829112620419.png"
+    class="post-cover"
+    alt="IDM冻结试用期方法"
+    title="Cover Image" />
+
+
+  
+    <div class="table-of-contents">
+      <h2>
+        Table of Contents
+      </h2>
+      <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#方法-1---powershell--推荐">方法 1 - PowerShell  【推荐】</a></li>
+        <li><a href="#方法-2---传统方法">方法 2 - 传统方法</a></li>
+        <li><a href="#信息">信息</a></li>
+        <li><a href="#系统要求">系统要求</a></li>
+        <li><a href="#高级信息">高级信息</a></li>
+        <li><a href="#工作原理">工作原理</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+  
+
+  <div class="post-content"><div>
+        <blockquote>
+<p>原文：https://github.com/lstprjct/IDM-Activation-Script/blob/main/README.md</p></blockquote>
+<h3 id="方法-1---powershell--推荐">方法 1 - PowerShell  【推荐】<a href="#方法-1---powershell--推荐" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>
+<p>右键点击 Windows 开始菜单，选择 <strong>PowerShell</strong> 或 <strong>终端</strong>（不是 CMD）。</p>
+</li>
+<li>
+<p>复制粘贴以下代码并按回车：</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-powershell" data-lang="powershell"><span class="line"><span class="cl"><span class="n">iex</span><span class="p">(</span><span class="nb">irm </span><span class="n">is</span><span class="p">.</span><span class="n">gd</span><span class="p">/</span><span class="n">idm_reset</span><span class="p">)</span>
+</span></span></code></pre></div><p><img src="http://img.orionyoung.com/pic/202501152004917.png" alt="image-20250115200432670"></p>
+</li>
+<li>
+<p>你将看到激活选项，按照屏幕上的指示操作即可。  选【2】</p>
+<p>【1】激活</p>
+<p>【2】冻结试用期</p>
+<p>【3】重置试用期</p>
+</li>
+<li>
+<p>完成。</p>
+<p><img src="http://img.orionyoung.com/pic/202501152003947.png" alt="image-20250115200349781"></p>
+<p>输入2回车后，会自动下载几个文件，不用管，直到出现成功的绿字，成功冻结</p>
+<p><img src="http://img.orionyoung.com/pic/202501152007027.png" alt="image-20250115200720863"></p>
+</li>
+</ol>
+<hr>
+<h3 id="方法-2---传统方法">方法 2 - 传统方法<a href="#方法-2---传统方法" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ol>
+<li>从 GitHub 下载文件。</li>
+<li>右键点击下载的 zip 文件并解压。</li>
+<li>在解压后的文件夹中，运行名为 <strong>IAS.cmd</strong> 的文件。</li>
+<li>你将看到激活选项，按照屏幕上的指示操作即可。</li>
+<li>完成。</li>
+</ol>
+<hr>
+<h3 id="信息">信息<a href="#信息" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<h4 id="冻结试用期">冻结试用期<a href="#冻结试用期" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<ul>
+<li>IDM 提供 30 天试用期，你可以使用脚本中的此选项将试用期永久锁定，这样你就不需要再次重置试用期，且试用期不会过期。</li>
+<li>此方法在应用此选项时需要联网。</li>
+<li>可以直接安装 IDM 更新，无需再次冻结试用期。</li>
+</ul>
+<h4 id="激活">激活<a href="#激活" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<p>（*目前不可用）</p>
+<ul>
+<li>此脚本通过注册表锁定方法来激活 Internet Download Manager (IDM)。</li>
+<li>此方法在激活时需要联网。</li>
+<li>可以直接安装 IDM 更新，无需再次激活。</li>
+<li>激活后，如果某些情况下 IDM 开始显示激活提示屏幕，只需再次运行激活选项，无需使用重置选项。</li>
+</ul>
+<h4 id="重置-idm-激活试用期">重置 IDM 激活/试用期<a href="#重置-idm-激活试用期" class="hanchor" ariaLabel="Anchor">#</a> </h4>
+<ul>
+<li>Internet Download Manager 提供 30 天试用期，你可以随时使用此脚本来重置激活/试用期。</li>
+<li>此选项也可用于恢复状态，例如 IDM 报告虚假序列号或其他类似错误时。</li>
+</ul>
+<hr>
+<h3 id="系统要求">系统要求<a href="#系统要求" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>该项目支持 Windows 7/8/8.1/10/11 及其服务器版本。</li>
+<li>运行 IAS 的 PowerShell 方法支持 Windows 8 及更高版本。</li>
+</ul>
+<hr>
+<h3 id="高级信息">高级信息<a href="#高级信息" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<ul>
+<li>要在无人值守模式下激活，请使用 <code>/act</code> 参数运行脚本。</li>
+<li>要在无人值守模式下冻结试用期，请使用 <code>/frz</code> 参数运行脚本。</li>
+<li>要在无人值守模式下重置，请使用 <code>/res</code> 参数运行脚本。</li>
+</ul>
+<hr>
+<h3 id="工作原理">工作原理<a href="#工作原理" class="hanchor" ariaLabel="Anchor">#</a> </h3>
+<p>IDM 将试用和激活相关的数据存储在各种注册表项中。其中一些注册表项被锁定以防止篡改，并且数据以某种模式存储以跟踪虚假序列号问题和剩余试用天数。此脚本通过触发 IDM 中的一些下载来生成这些注册表项，识别这些注册表项并锁定它们，使 IDM 无法编辑和查看它们。这样，IDM 就无法显示“使用虚假序列号激活”的警告。</p>
+
+      </div></div>
+
+  
+    
+<div class="pagination">
+  <div class="pagination__title">
+    <span class="pagination__title-h">阅读其他文章</span>
+    <hr />
+  </div>
+  <div class="pagination__buttons">
+    
+      <a href="//localhost:1313/posts/3100-%E6%8D%A2%E6%B0%B4%E9%97%AE%E9%A2%98-ii/" class="button inline prev">
+        &lt; [<span class="button__text">每日算法 #3100 换水问题 贰</span>]
+      </a>
+    
+    
+    
+  </div>
+</div>
+
+
+  
+
+  
+    
+
+  
+</article>
+
+  </div>
+
+  
+    <footer class="footer">
+  <div class="footer__inner">
+    
+      <div class="copyright">
+        <span>© 2025 Powered by <a href="https://gohugo.io">Hugo</a></span>
+    
+      <span>:: <a href="https://github.com/panr/hugo-theme-terminal" target="_blank">Theme</a> made by <a href="https://github.com/panr" target="_blank">panr</a></span>
+      </div>
+  </div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript" src="/bundle.min.js"></script>
+
+
+
+
+
+  
+</div>
+
+</body>
+</html>
