@@ -21,7 +21,7 @@ hideComments: false
 
 toc: true
 
-cover: https://img.orionyoung.com/20250829112620419.png
+cover: 
 
 readingTime: false
  

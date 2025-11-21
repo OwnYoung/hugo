@@ -89,7 +89,7 @@ pagination.pagerSize = 5  # 分页大小，每页显示5条内容
       words = "字"  # 字数单位
 
       [languages.en.params.logo]
-        logoText = "终端"  # Logo文字
+        logoText = "Orion"  # Logo文字
         logoHomeLink = "/"  # Logo指向首页
 
       [languages.en.menu]
